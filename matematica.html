@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="icone/icone1.png" type="image/x-icon">
+  <title>Matemática</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+    <header class="py-2 header-custom">
+        <div class="header-container d-flex align-items-center justify-content-between w-100">
+          <h1 class="mx-3 text-center w-100">MATEMÁTICA</h1>
+        </div>
+    </header>
+
+  <!-- Menu -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand menu-item menu-home" href="./index.html">Página Inicial</a>
+    <a class="navbar-brand menu-item menu-portugues" href="./portugues.html">Português</a>
+    <a class="navbar-brand menu-item menu-matematica" href="./matematica.html">Matemática</a>
+    <a class="navbar-brand menu-item menu-ciencias" href="./ciencias.html">Ciências</a>
+    <a class="navbar-brand menu-item menu-historia" href="./historia.html">História</a>
+    <a class="navbar-brand menu-item menu-geografia" href="./geografia.html">Geografia</a>
+    <a class="navbar-brand menu-item menu-ingles" href="./ingles.html">Inglês</a>
+    <a class="navbar-brand menu-item menu-danca" href="./danca.html">Dança</a>
+  </nav>
+
+  <div class="container my-4">
+    <!-- TEMPO E CAPACIDADE -->
+    <div id="tempo-capacidade" class="subject mb-5">
+      <h3 class="text-primary">Medidas 2 (Tempo e Capacidade)</h3>
+      <p><strong>Resumo:</strong><br>
+        Tempo: mede duração de eventos.<br>
+        1 minuto = 60 segundos<br>
+        1 hora = 60 minutos<br>
+        1 dia = 24 horas<br>
+        1 semana = 7 dias<br>
+        1 ano = 12 meses = 365 dias (ou 366 nos anos bissextos)<br>
+        Capacidade: mede o quanto cabe em um recipiente (geralmente líquidos).<br>
+        Unidade padrão: litro (L)<br>
+        1 L = 1.000 mL<br>
+        ½ L = 500 mL<br>
+        ¼ L = 250 mL
+      </p>
+
+      <form id="quiz-tempo">
+        <div class="question mb-2">
+          <p>1️⃣ Quantos minutos há em 3 horas?</p>
+          <label><input type="radio" name="q1" value="a"> 90</label><br>
+          <label><input type="radio" name="q1" value="b"> 120</label><br>
+          <label><input type="radio" name="q1" value="c"> 150</label><br>
+          <label><input type="radio" name="q1" value="d"> 180</label><br>
+        </div>
+
+        <div class="question mb-2">
+          <p>2️⃣ Uma garrafa tem 2,5 L de suco. Quantos mL isso representa?</p>
+          <label><input type="radio" name="q2" value="a"> 250 mL</label><br>
+          <label><input type="radio" name="q2" value="b"> 500 mL</label><br>
+          <label><input type="radio" name="q2" value="c"> 2.500 mL</label><br>
+        </div>
+
+        <div class="question mb-2">
+          <p>3️⃣ Se um filme começou às 19h45 e terminou às 21h15, qual foi a duração?</p>
+          <label><input type="radio" name="q3" value="a"> 1h15min</label><br>
+          <label><input type="radio" name="q3" value="b"> 1h30min</label><br>
+          <label><input type="radio" name="q3" value="c"> 2h15min</label><br>
+        </div>
+
+        <button type="button" class="btn btn-custom" onclick="checkAnswers('quiz-tempo','result-tempo','tempo')">Ver Resultado</button>
+        <button type="button" class="btn btn-secondary" onclick="resetQuiz('quiz-tempo','result-tempo')">Tentar Novamente</button>
+        <p id="result-tempo" class="mt-2"></p>
+      </form>
+    </div>
+
+    <!-- FIGURAS GEOMÉTRICAS PLANAS, RETAS E ÂNGULOS -->
+    <div id="figuras-angulos" class="subject mb-5">
+      <h3 class="text-success">📏 Figuras Geométricas Planas, Retas e Ângulos</h3>
+      <p><strong>Resumo:</strong><br>
+        Figuras planas: têm base e altura, mas não têm volume.<br>
+        Exemplos: quadrado, retângulo, triângulo, círculo.<br>
+        Retas: Paralelas → nunca se cruzam. Perpendiculares → formam 90°. Concorrentes → se cruzam em um ponto.<br>
+        Ângulos: Agudo &lt; 90°, Reto = 90°, Obtuso &gt; 90° e &lt; 180°.
+      </p>
+
+      <form id="quiz-figuras">
+        <div class="question mb-2">
+          <p>1️⃣ Qual dessas figuras não é plana?</p>
+          <label><input type="radio" name="q4" value="a"> Triângulo</label><br>
+          <label><input type="radio" name="q4" value="b"> Quadrado</label><br>
+          <label><input type="radio" name="q4" value="c"> Cubo</label><br>
+          <label><input type="radio" name="q4" value="d"> Círculo</label><br>
+        </div>
+
+        <div class="question mb-2">
+          <p>2️⃣ Um ângulo de 90° é chamado de:</p>
+          <label><input type="radio" name="q5" value="a"> Agudo</label><br>
+          <label><input type="radio" name="q5" value="b"> Reto</label><br>
+          <label><input type="radio" name="q5" value="c"> Obtuso</label><br>
+          <label><input type="radio" name="q5" value="d"> Plano</label><br>
+        </div>
+
+        <div class="question mb-2">
+          <p>3️⃣ Duas retas que nunca se cruzam, mesmo se prolongadas, são:</p>
+          <label><input type="radio" name="q6" value="a"> Concorrentes</label><br>
+          <label><input type="radio" name="q6" value="b"> Paralelas</label><br>
+          <label><input type="radio" name="q6" value="c"> Perpendiculares</label><br>
+          <label><input type="radio" name="q6" value="d"> Opostas</label><br>
+        </div>
+
+        <button type="button" class="btn btn-custom" onclick="checkAnswers('quiz-figuras','result-figuras','figuras')">Ver Resultado</button>
+        <button type="button" class="btn btn-secondary" onclick="resetQuiz('quiz-figuras','result-figuras')">Tentar Novamente</button>
+        <p id="result-figuras" class="mt-2"></p>
+      </form>
+    </div>
+
+    <!-- NÚMEROS DECIMAIS -->
+    <div id="numeros-decimais" class="subject mb-5">
+      <h3 class="text-success">📏 Números Decimais</h3>
+      <p><strong>Resumo:</strong><br>
+        Números que possuem vírgula. Ex: 3,5 ; 2,75. Adição/subtração alinhar vírgula; multiplicação contar casas decimais; divisão ajustar vírgula quando necessário.
+      </p>
+
+      <form id="quiz-decimais">
+        <div class="question mb-2">
+          <p>1️⃣ 3,5 + 2,25 =</p>
+          <label><input type="radio" name="q7" value="a"> 5,60</label><br>
+          <label><input type="radio" name="q7" value="b"> 5,75</label><br>
+          <label><input type="radio" name="q7" value="c"> 6,25</label><br>
+          <label><input type="radio" name="q7" value="d"> 6,50</label><br>
+        </div>
+
+        <div class="question mb-2">
+          <p>2️⃣ 4,8 − 1,35 =</p>
+          <label><input type="radio" name="q8" value="a"> 3,15</label><br>
+          <label><input type="radio" name="q8" value="b"> 3,25</label><br>
+          <label><input type="radio" name="q8" value="c"> 3,45</label><br>
+          <label><input type="radio" name="q8" value="d"> 3,55</label><br>
+        </div>
+
+        <div class="question mb-2">
+          <p>3️⃣ 2,5 × 3 =</p>
+          <label><input type="radio" name="q9" value="a"> 6,5</label><br>
+          <label><input type="radio" name="q9" value="b"> 7,5</label><br>
+          <label><input type="radio" name="q9" value="c"> 8,5</label><br>
+          <label><input type="radio" name="q9" value="d"> 9,5</label><br>
+        </div>
+
+        <button type="button" class="btn btn-custom" onclick="checkAnswers('quiz-decimais','result-decimais','decimais')">Ver Resultado</button>
+        <button type="button" class="btn btn-secondary" onclick="resetQuiz('quiz-decimais','result-decimais')">Tentar Novamente</button>
+        <p id="result-decimais" class="mt-2"></p>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Respostas corretas por "chave"
+    const answers = {
+      tempo:   ['d','c','b'], // q1,q2,q3
+      figuras: ['c','b','b'], // q4,q5,q6
+      decimais:['b','c','b']  // q7,q8,q9
+    };
+
+    function checkAnswers(formId, resultId, answersKey) {
+      const form = document.getElementById(formId);
+      const resultEl = document.getElementById(resultId);
+
+      if (!form || !resultEl) {
+        console.error('Formulário ou elemento de resultado não encontrados:', formId, resultId);
+        return;
+      }
+
+      const selected = [...form.querySelectorAll('input[type=radio]:checked')].map(r => r.value);
+      if (selected.length === 0) {
+        resultEl.innerHTML = "<span class='text-danger'>Responda as perguntas primeiro!</span>";
+        return;
+      }
+
+      const correct = answers[answersKey];
+      let score = 0;
+      selected.forEach((v, i) => { if (v === correct[i]) score++; });
+
+      const total = correct.length;
+      if (score === total) {
+        resultEl.innerHTML = `<span class='text-success'>🎉 Parabéns! Você acertou ${score} de ${total}!</span>`;
+      } else {
+        resultEl.innerHTML = `<span class='text-warning'>Você acertou ${score} de ${total}. Continue estudando! 💪</span>`;
+      }
+    }
+
+    function resetQuiz(formId, resultId) {
+      const form = document.getElementById(formId);
+      const resultEl = document.getElementById(resultId);
+      if (!form) return;
+      form.querySelectorAll('input[type=radio]').forEach(r => r.checked = false);
+      if (resultEl) resultEl.innerHTML = '';
+    }
+  </script>
+</body>
+</html>

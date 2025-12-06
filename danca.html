@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="icone/icone1.png" type="image/x-icon">
+  <title>Dança</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header class="py-2 header-custom">
+    <div class="header-container d-flex align-items-center justify-content-between w-100">
+      
+      <h1 class="mx-3 text-center w-100">DANÇA</h1>
+    </div>
+  </header>
+
+  <!-- Menu -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand menu-item menu-home" href="./index.html">Página Inicial</a>
+    <a class="navbar-brand menu-item menu-portugues" href="./portugues.html">Português</a>
+    <a class="navbar-brand menu-item menu-matematica" href="./matematica.html">Matemática</a>
+    <a class="navbar-brand menu-item menu-ciencias" href="./ciencias.html">Ciências</a>
+    <a class="navbar-brand menu-item menu-historia" href="./historia.html">História</a>
+    <a class="navbar-brand menu-item menu-geografia" href="./geografia.html">Geografia</a>
+    <a class="navbar-brand menu-item menu-ingles" href="./ingles.html">Inglês</a>
+    <a class="navbar-brand menu-item menu-danca" href="./danca.html">Dança</a>
+  </nav>
+
+  <div class="container my-4">
+
+    <!-- 1. Rudolf Laban -->
+    <div id="laban" class="subject mb-5">
+      <h3 class="text-primary">1️⃣ A Importância do Artista de Dança Rudolf Laban</h3>
+      <p><strong>Resumo:</strong> 🎨 Rudolf Laban foi um importante coreógrafo, dançarino e teórico da dança do século XX. Ele acreditava que qualquer pessoa podia dançar, expressando sentimentos e ideias pelo corpo. Criou o Sistema Laban de Movimento, usado até hoje para estudar e registrar movimentos corporais.</p>
+
+      <form id="quiz-laban">
+        <div class="question">
+          <p>1️⃣ Quem foi Rudolf Laban?</p>
+          <input type="radio" name="q1" value="a"> Um cantor e compositor<br>
+          <input type="radio" name="q1" value="b"> Um coreógrafo e estudioso dos movimentos corporais <br>
+          <input type="radio" name="q1" value="c"> Um pintor famoso<br>
+          <input type="radio" name="q1" value="d"> Um inventor de instrumentos musicais
+        </div>
+
+        <div class="question">
+          <p>2️⃣ O que Rudolf Laban defendia sobre a dança?</p>
+          <input type="radio" name="q2" value="a"> Que só profissionais podiam dançar<br>
+          <input type="radio" name="q2" value="b"> Que dançar era uma forma de castigo<br>
+          <input type="radio" name="q2" value="c"> Que qualquer pessoa podia dançar e se expressar pelo corpo <br>
+          <input type="radio" name="q2" value="d"> Que a dança servia apenas para apresentações
+        </div>
+
+        <button type="button" class="btn btn-custom" onclick="checkAnswers('laban')">Ver Resultado</button>
+        <button type="button" class="btn btn-secondary" onclick="resetQuiz('laban')">Tentar Novamente</button>
+        <p id="result-laban"></p>
+      </form>
+    </div>
+
+    <!-- 2. Fatores de Movimento -->
+    <div id="fatores" class="subject mb-5">
+      <h3 class="text-success">2️⃣ Fatores de Movimento: Peso, Tempo, Espaço e Fluência</h3>
+      <p><strong>Resumo:</strong> Laban estudou que o movimento da dança é formado por quatro fatores principais:
+      <ul>
+        <li>⚖️ Peso: força usada no movimento (leve ou forte).</li>
+        <li>⏱️ Tempo: duração do movimento (rápido ou lento).</li>
+        <li>📍 Espaço: direção e alcance do movimento (grande, pequeno, reto ou curvo).</li>
+        <li>🌊 Fluência: continuidade do movimento (livre ou controlado).</li>
+      </ul>
+      Esses fatores ajudam a criar diferentes ritmos, estilos e emoções na dança.</p>
+
+      <form id="quiz-fatores">
+        <div class="question">
+          <p>1️⃣ Quais são os quatro fatores de movimento estudados por Laban?</p>
+          <input type="radio" name="q1" value="a"> Peso, tempo, espaço e fluência <br>
+          <input type="radio" name="q1" value="b"> Ritmo, som, cor e música<br>
+          <input type="radio" name="q1" value="c"> Força, energia, alegria e velocidade<br>
+          <input type="radio" name="q1" value="d"> Rosto, pernas, braços e pés
+        </div>
+
+        <div class="question">
+          <p>2️⃣ O que representa o fator “tempo” no movimento?</p>
+          <input type="radio" name="q2" value="a"> A força usada no movimento<br>
+          <input type="radio" name="q2" value="b"> A duração — se o movimento é rápido ou lento <br>
+          <input type="radio" name="q2" value="c"> A direção do espaço<br>
+          <input type="radio" name="q2" value="d"> O equilíbrio do corpo
+        </div>
+
+        <button type="button" class="btn btn-custom" onclick="checkAnswers('fatores')">Ver Resultado</button>
+        <button type="button" class="btn btn-secondary" onclick="resetQuiz('fatores')">Tentar Novamente</button>
+        <p id="result-fatores"></p>
+      </form>
+    </div>
+
+    <!-- 3. Flashmob -->
+    <div id="flashmob" class="subject mb-5">
+      <h3 class="text-warning">3️⃣ Flashmob</h3>
+      <p><strong>Resumo:</strong> O Flashmob é uma apresentação de dança rápida feita em locais públicos, combinada previamente, com o objetivo de divertir, transmitir uma mensagem ou chamar atenção para uma causa.</p>
+
+      <form id="quiz-flashmob">
+        <div class="question">
+          <p>1️⃣ O que é um Flashmob?</p>
+          <input type="radio" name="q1" value="a"> Um tipo de competição de dança<br>
+          <input type="radio" name="q1" value="b"> Uma dança feita de surpresa em locais públicos <br>
+          <input type="radio" name="q1" value="c"> Um show com ingressos<br>
+          <input type="radio" name="q1" value="d"> Um filme sobre dança
+        </div>
+
+        <div class="question">
+          <p>2️⃣ Qual é o principal objetivo do Flashmob?</p>
+          <input type="radio" name="q2" value="a"> Ensinar passos de dança<br>
+          <input type="radio" name="q2" value="b"> Divertir e surpreender as pessoas <br>
+          <input type="radio" name="q2" value="c"> Fazer propaganda de produtos<br>
+          <input type="radio" name="q2" value="d"> Treinar dançarinos profissionais
+        </div>
+
+        <button type="button" class="btn btn-custom" onclick="checkAnswers('flashmob')">Ver Resultado</button>
+        <button type="button" class="btn btn-secondary" onclick="resetQuiz('flashmob')">Tentar Novamente</button>
+        <p id="result-flashmob"></p>
+      </form>
+    </div>
+
+  </div>
+
+  <script>
+    function checkAnswers(subject) {
+      const quiz = document.getElementById(`quiz-${subject}`);
+      const result = document.getElementById(`result-${subject}`);
+      const answers = {
+        'laban': ['b','c'],
+        'fatores': ['a','b'],
+        'flashmob': ['b','b']
+      };
+
+      const selected = [...quiz.querySelectorAll('input[type=radio]:checked')].map(r => r.value);
+      let score = 0;
+      selected.forEach((v,i) => { if(v === answers[subject][i]) score++; });
+
+      if(selected.length === 0){
+        result.innerHTML = "<span class='text-danger'>Responda as perguntas primeiro!</span>";
+        return;
+      }
+
+      const total = answers[subject].length;
+      if(score === total){
+        result.innerHTML = `<span class='text-success'>🎉 Parabéns! Você acertou ${score} de ${total}!</span>`;
+      }else{
+        result.innerHTML = `<span class='text-warning'>Você acertou ${score} de ${total}. Continue estudando! 💪</span>`;
+      }
+    }
+
+    function resetQuiz(subject){
+      const quiz = document.getElementById(`quiz-${subject}`);
+      quiz.querySelectorAll('input[type=radio]').forEach(r => r.checked = false);
+      document.getElementById(`result-${subject}`).innerHTML = "";
+    }
+  </script>
+</body>
+</html>

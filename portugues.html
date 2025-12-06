@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="icone/icone1.png" type="image/x-icon">
+  <title>Português</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+    <header class="py-2 header-custom">
+        <div class="header-container d-flex align-items-center justify-content-between w-100">
+          <h1 class="mx-3 text-center w-100">PORTUGUÊS</h1>
+        </div>
+    </header>
+
+  <!-- Menu -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand menu-item menu-home" href="./index.html">Página Inicial</a>
+    <a class="navbar-brand menu-item menu-portugues" href="./portugues.html">Português</a>
+    <a class="navbar-brand menu-item menu-matematica" href="./matematica.html">Matemática</a>
+    <a class="navbar-brand menu-item menu-ciencias" href="./ciencias.html">Ciências</a>
+    <a class="navbar-brand menu-item menu-historia" href="./historia.html">História</a>
+    <a class="navbar-brand menu-item menu-geografia" href="./geografia.html">Geografia</a>
+    <a class="navbar-brand menu-item menu-ingles" href="./ingles.html">Inglês</a>
+    <a class="navbar-brand menu-item menu-danca" href="./danca.html">Dança</a>
+  </nav>
+
+  <div class="container my-4">
+    <!-- Aposto e Vocativo -->
+    <div id="uso-aposto" class="subject mb-5">
+
+      <h1 class="text-danger">Aposto e Vocativo</h1>
+
+      <h3 class="text-primary">1. Aposto</h3>
+      <p><strong>Resumo:</strong> O aposto é um termo da oração que explica, resume, identifica ou especifica outro termo.
+      Ele pode vir entre vírgulas, dois-pontos, travessões ou parênteses.</p>
+      <p>
+        <ul>
+          <strong>Tipos comuns:</strong>
+            <li><strong>Aposto explicativo:</strong> traz uma explicação.</li>
+            <li><strong>Aposto enumerativo:</strong> apresenta uma lista.</li>
+            <li><strong>Aposto resumidor:</strong> retoma uma ideia anterior.</li>
+            <li><strong>Aposto especificativo:</strong> identifica exatamente algo.</li>
+          📌 Exemplo: Ana, <strong>minha amiga</strong>, chegou agora.
+          <strong>(“minha amiga” explica quem é Ana)</strong>
+        </ul>
+      </p>
+      
+      <h3 class="text-primary">2. Vocativo</h3>
+      <p><strong>Resumo:</strong> O vocativo é usado quando queremos chamar, invocar ou falar diretamente com alguém.
+      Ele NÃO faz parte da frase, é só um chamado.
+      Sempre vem separado por vírgula, travessão ou exclamação.</p>
+      <p>📌 Exemplo: <strong>João</strong>, venha aqui!
+      <strong>(“João” é o vocativo, chamando a pessoa)</strong></p>
+
+
+      <form id="quiz-aposto">
+        <div class="question">
+          <p>1️⃣ Em “Pedro, meu irmão, chegou hoje.”, o termo “meu irmão” é:</p>
+          <input type="radio" name="q1" value="a"> Vocativo <br>
+          <input type="radio" name="q1" value="b"> Sujeito <br>
+          <input type="radio" name="q1" value="c"> Aposto <br>
+          <input type="radio" name="q1" value="d"> Predicado
+        </div>
+
+        <div class="question">
+          <p>2️⃣ Em “Maria, venha aqui!”, o termo “Maria” é:</p>
+          <input type="radio" name="q2" value="a"> Sujeito <br>
+          <input type="radio" name="q2" value="b"> Vocativo <br>
+          <input type="radio" name="q2" value="c"> Aposto explicativo <br>
+          <input type="radio" name="q2" value="d"> Objeto direto
+        </div>
+
+        <div class="question">
+          <p>3️⃣ O vocativo é usado para: </p>
+          <input type="radio" name="q3" value="a"> Indicar tempo <br>
+          <input type="radio" name="q3" value="b"> Explicar o sujeito <br>
+          <input type="radio" name="q3" value="c"> Chamar alguém <br>
+          <input type="radio" name="q3" value="d"> Completar o verbo
+        </div>
+
+        <div class="question">
+          <p>4️⃣ Em “Os planetas: Marte, Júpiter e Saturno.”, temos um: </p>
+          <input type="radio" name="q4" value="a"> Aposto resumidor <br>
+          <input type="radio" name="q4" value="b"> Aposto enumerativo <br>
+          <input type="radio" name="q4" value="c"> Vocativo <br>
+          <input type="radio" name="q4" value="d"> Sujeito composto
+        </div>
+
+        <div class="question">
+          <p>5️⃣ Assinale a frase que contém vocativo: </p>
+          <input type="radio" name="q5" value="a"> Carla, minha prima, estuda muito. <br>
+          <input type="radio" name="q5" value="b"> Estude mais, Pedro! <br>
+          <input type="radio" name="q5" value="c"> O menino, aluno novo, chegou. <br>
+          <input type="radio" name="q5" value="d"> Eu comprei frutas: maçã, pera e uva.
+        </div>
+
+        <button type="button" class="btn btn-custom" onclick="checkAnswers('aposto')">Ver Resultado</button>
+        <button type="button" class="btn btn-secondary" onclick="resetQuiz('aposto')">Tentar Novamente</button>
+        <p id="result-aposto"></p>
+      </form>
+    </div>
+
+    <!-- Tempo Verbal -->
+    <div id="verbal" class="subject mb-5">
+      <h3 class="text-success">3. Tempo Verbal</h3>
+      <p><strong>Resumo:</strong> Os tempos verbais indicam quando a ação acontece:</p>
+
+        <ul>
+          <h5><strong>Presente</strong></h5>
+          <p>
+            <li><strong>Ação que acontece agora</strong> ou que é habitual.</li>
+            <strong>📌 Ex.: Eu estudo.</strong>
+          </p>
+        </ul>
+      
+        <ul>
+          <h5><strong>Passado (Pretério)</strong></h5>
+          <p><strong>Ação que já aconteceu.</strong>
+            <li><strong>Pretérito perfeito: </strong> terminou. → Eu estudei.</li>
+            <li><strong>Pretérito imperfeito:</strong> era habitual. → Eu estudava.</li>
+            <li><strong>Pretérito mais-que-perfeito:</strong> ação anterior a outra no passado. → Eu estudara.</li>
+          </p>
+        </ul>
+
+        <ul>
+          <h5><strong>Futuro</strong></h5>
+          <p><strong>Ação que vai acontecer.</strong>
+            <li><strong>Futuro do presente: </strong> Eu estudarei.</li>
+            <li><strong>Futuro do pretérito:</strong> Eu estudaria.</li>
+          </p>
+        </ul>
+
+      <form id="quiz-verbal">
+        <div class="question">
+          <p>1️⃣ O verbo “estudo” está no tempo: </p>
+          <input type="radio" name="q1" value="a"> Pretérito imperfeito <br>
+          <input type="radio" name="q1" value="b"> Presente <br>
+          <input type="radio" name="q1" value="c"> Futuro do presente <br>
+          <input type="radio" name="q1" value="d"> Pretérito perfeito
+        </div>
+
+        <div class="question">
+          <p>2️⃣ Em “Nós viajaremos amanhã”, o tempo verbal é: </p>
+          <input type="radio" name="q2" value="a"> Passado <br>
+          <input type="radio" name="q2" value="b"> Presente <br>
+          <input type="radio" name="q2" value="c"> Futuro do presente <br>
+          <input type="radio" name="q2" value="d"> Futuro do pretérito
+        </div>
+
+        <div class="question">
+          <p>3️⃣ “Eu correria todos os dias se tivesse tempo.” está no: </p>
+          <input type="radio" name="q3" value="a"> Presente <br>
+          <input type="radio" name="q3" value="b"> Pretérito perfeito <br>
+          <input type="radio" name="q3" value="c"> Futuro do pretérito <br>
+          <input type="radio" name="q3" value="d"> Pretérito imperfeito
+        </div>
+
+        <div class="question">
+          <p>4️⃣ “Ontem eu estudei muito.” está no: </p>
+          <input type="radio" name="q4" value="a"> Futuro do presente <br>
+          <input type="radio" name="q4" value="b"> Pretérito perfeito <br>
+          <input type="radio" name="q4" value="c"> Pretérito imperfeito <br>
+          <input type="radio" name="q4" value="d"> Presente
+        </div>
+
+        <div class="question">
+          <p>5️⃣ “Quando era criança, eu brincava muito.” está no: </p>
+          <input type="radio" name="q5" value="a"> Pretérito imperfeito <br>
+          <input type="radio" name="q5" value="b"> Pretérito perfeito <br>
+          <input type="radio" name="q5" value="c"> Futuro do presente <br>
+          <input type="radio" name="q5" value="d"> Presente
+        </div>
+
+        <button type="button" class="btn btn-custom" onclick="checkAnswers('verbal')">Ver Resultado</button>
+        <button type="button" class="btn btn-secondary" onclick="resetQuiz('verbal')">Tentar Novamente</button>
+        <p id="result-verbal"></p>
+      </form>
+    </div>
+
+  </div>
+
+  <script>
+  const answers = {
+    aposto: ['c','b','c','b','b'],
+    verbal: ['b','c','c','b','a'], 
+  };
+
+  // mapeamento automático: form id = "quiz-" + key, result id = "result-" + key
+  function checkAnswers(key) {
+    const formId = 'quiz-' + key;
+    const resultId = 'result-' + key;
+
+    const form = document.getElementById(formId);
+    const resultEl = document.getElementById(resultId);
+
+    if (!form || !resultEl) {
+      console.error('Formulário ou elemento de resultado não encontrados:', formId, resultId);
+      return;
+    }
+
+    const selected = [...form.querySelectorAll('input[type=radio]:checked')].map(r => r.value);
+    if (selected.length === 0) {
+      resultEl.innerHTML = "<span class='text-danger'>Responda as perguntas primeiro!</span>";
+      return;
+    }
+
+    const correct = answers[key];
+    if (!correct) {
+      resultEl.innerHTML = "<span class='text-danger'>Erro: conjunto de respostas não encontrado.</span>";
+      return;
+    }
+
+    let score = 0;
+    selected.forEach((v, i) => { if (v === correct[i]) score++; });
+
+    const total = correct.length;
+    if (score === total) {
+      resultEl.innerHTML = `<span class='text-success'>🎉 Parabéns! Você acertou ${score} de ${total}!</span>`;
+    } else {
+      resultEl.innerHTML = `<span class='text-warning'>Você acertou ${score} de ${total}. Continue estudando! 💪</span>`;
+    }
+  }
+
+  function resetQuiz(key) {
+    const form = document.getElementById('quiz-' + key);
+    const resultEl = document.getElementById('result-' + key);
+    if (!form) return;
+    form.querySelectorAll('input[type=radio]').forEach(r => r.checked = false);
+    if (resultEl) resultEl.innerHTML = '';
+  }
+  </script>
+</body>
+</html>
+
+
+ 

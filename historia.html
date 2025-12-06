@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="icone/icone1.png" type="image/x-icon">
+  <title>História</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header class="py-2 header-custom">
+    <div class="header-container d-flex align-items-center justify-content-between w-100">
+      
+      <h1 class="mx-3 text-center w-100">HISTÓRIA</h1>
+    </div>
+  </header>
+
+  <!-- Menu -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand menu-item menu-home" href="./index.html">Página Inicial</a>
+    <a class="navbar-brand menu-item menu-portugues" href="./portugues.html">Português</a>
+    <a class="navbar-brand menu-item menu-matematica" href="./matematica.html">Matemática</a>
+    <a class="navbar-brand menu-item menu-ciencias" href="./ciencias.html">Ciências</a>
+    <a class="navbar-brand menu-item menu-historia" href="./historia.html">História</a>
+    <a class="navbar-brand menu-item menu-geografia" href="./geografia.html">Geografia</a>
+    <a class="navbar-brand menu-item menu-ingles" href="./ingles.html">Inglês</a>
+    <a class="navbar-brand menu-item menu-danca" href="./danca.html">Dança</a>
+  </nav>
+
+  <div class="container my-4">
+
+    <!-- 1. Dimensões históricas e sociais das migrações -->
+    <div id="dimensoes" class="subject mb-5">
+      <h3 class="text-primary"> 1. Dimensões históricas e sociais das migrações </h3>
+      <h4><strong>Resumo:</strong></h4>
+      <p>
+       As migrações sempre fizeram parte da história humana e influenciaram profundamente a formação das sociedades. No Brasil, esse processo foi decisivo para moldar nossa identidade nacional. Desde a chegada dos povos indígenas — primeiros habitantes do território — até a colonização portuguesa, o país sempre foi marcado por deslocamentos de populações.
+      </p>
+      <p>
+        Durante os séculos seguintes, milhões de africanos foram trazidos à força pelo tráfico negreiro, contribuindo de maneira fundamental para a cultura, a economia e a formação do povo brasileiro. Após a abolição da escravidão, o Brasil recebeu ondas de imigrantes europeus (italianos, alemães, espanhóis, portugueses), asiáticos (principalmente japoneses) e do Oriente Médio (sírios e libaneses). Cada grupo trouxe sua língua, cultura, costumes, culinária e modos de vida, tornando o Brasil um país multicultural.
+      </p>
+      <p>
+        Essas migrações influenciaram a economia, a formação das cidades, a agricultura, as relações sociais e a diversidade cultural. Hoje, o Brasil continua recebendo migrantes e refugiados, o que reforça sua identidade plural.
+      </p>
+
+      <form id="quiz-dimensoes">
+        <div class="question">
+          <p>1️⃣ A migração foi importante para a formação do Brasil porque: </p>
+          <input type="radio" name="q1" value="a"> Impediu a chegada de diferentes culturas ao país. <br>
+          <input type="radio" name="q1" value="b"> Contribuiu para a formação multicultural da sociedade brasileira. <br>
+          <input type="radio" name="q1" value="c"> Eliminou as diferenças culturais entre os povos. <br>
+          <input type="radio" name="q1" value="d"> Manteve o Brasil isolado de influências externas.
+        </div>
+
+        <div class="question">
+          <p>2️⃣ Após a abolição da escravidão, o Brasil recebeu principalmente imigrantes de quais regiões? </p>
+          <input type="radio" name="q2" value="a"> Europa, Ásia e Oriente Médio <br>
+          <input type="radio" name="q2" value="b"> Antártida e Oceania <br>
+          <input type="radio" name="q2" value="c"> Apenas países africanos <br>
+          <input type="radio" name="q2" value="d"> Apenas países sul-americanos
+        </div>
+
+        <div class="question">
+          <p>3️⃣ Um efeito social das migrações históricas no Brasil é: </p>
+          <input type="radio" name="q3" value="a"> Redução total da diversidade cultural <br>
+          <input type="radio" name="q3" value="b"> A formação de uma identidade homogênea <br>
+          <input type="radio" name="q3" value="c"> A construção de uma sociedade plural e multicultural <br>
+          <input type="radio" name="q3" value="d"> A exclusão de diferentes tradições culturais
+        </div>
+
+        <button type="button" class="btn btn-custom" onclick="checkAnswers('dimensoes')">Ver Resultado</button>
+        <button type="button" class="btn btn-secondary" onclick="resetQuiz('dimensoes')">Tentar Novamente</button>
+        <p id="result-dimensoes"></p>
+      </form>
+    </div>
+
+    <!-- 2. Políticas de Migração -->
+    <div id="migracao" class="subject mb-5">
+      <h3 class="text-success"> 2. Políticas de Migração </h3>
+      <h4><strong>Resumo:</strong></h4>
+      <p>
+        As políticas de migração são as regras e leis criadas por um país para controlar a entrada, permanência e direitos de pessoas estrangeiras. No Brasil, essas políticas têm evoluído ao longo do tempo.
+      </p>
+      <p>
+        Antigamente, as políticas eram mais restritivas e selecionavam imigrantes com base em critérios raciais ou econômicos. Hoje, a legislação brasileira é considerada mais humanitária. A Lei de Migração de 2017 substituiu o antigo Estatuto do Estrangeiro e passou a reconhecer o migrante como sujeito de direitos, garantindo proteção humanitária, integração social e igualdade de acesso a serviços públicos.
+      </p>
+      <p>
+        Essas políticas influenciam aspectos sociais (como integração cultural), culturais (introdução de novas culturas e línguas), e econômicos (entrada de trabalhadores qualificados ou mão de obra necessária). Também incluem ações voltadas a refugiados, trabalhadores estrangeiros, estudantes e pessoas em situação de vulnerabilidade.
+      </p>
+
+      <form id="quiz-migracao">
+        <div class="question">
+          <p>1️⃣ A atual Lei de Migração brasileira (2017) tem como principal objetivo: </p>
+          <input type="radio" name="q1" value="a"> Impedir a entrada de qualquer estrangeiro no país. <br>
+          <input type="radio" name="q1" value="b"> Reconhecer o migrante como sujeito de direitos e promover sua integração. <br>
+          <input type="radio" name="q1" value="c"> Proibir refugiados de viverem no Brasil. <br>
+          <input type="radio" name="q1" value="d"> Substituir cidadãos brasileiros por estrangeiros no mercado de trabalho.
+        </div>
+
+        <div class="question">
+          <p>2️⃣ Uma implicação econômica das políticas de migração é: </p>
+          <input type="radio" name="q2" value="a"> Aumento da diversidade de produtos e serviços <br>
+          <input type="radio" name="q2" value="b"> Redução da força de trabalho <br>
+          <input type="radio" name="q2" value="c"> Extinção de empregos formais <br>
+          <input type="radio" name="q2" value="d"> Proibição de estrangeiros trabalharem
+        </div>
+
+        <div class="question">
+          <p>3️⃣ As políticas de migração influenciam a cultura brasileira porque: </p>
+          <input type="radio" name="q3" value="a"> Impedem a entrada de novas tradições culturais <br>
+          <input type="radio" name="q3" value="b"> Eliminam a diversidade existente no país <br>
+          <input type="radio" name="q3" value="c"> Permitem a convivência e integração de diferentes culturas <br>
+          <input type="radio" name="q3" value="d"> Criam barreiras para o aprendizado de novos idiomas
+        </div>
+
+        <button type="button" class="btn btn-custom" onclick="checkAnswers('migracao')">Ver Resultado</button>
+        <button type="button" class="btn btn-secondary" onclick="resetQuiz('migracao')">Tentar Novamente</button>
+        <p id="result-migracao"></p>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function checkAnswers(subject) {
+      const quiz = document.getElementById(`quiz-${subject}`);
+      const result = document.getElementById(`result-${subject}`);
+      const answers = {
+        'dimensoes': ['b','a','c'],
+        'migracao': ['b','a','c'],
+      };
+
+      const selected = [...quiz.querySelectorAll('input[type=radio]:checked')].map(r => r.value);
+      let score = 0;
+      selected.forEach((v,i) => { if(v === answers[subject][i]) score++; });
+
+      if(selected.length === 0){
+        result.innerHTML = "<span class='text-danger'>Responda as perguntas primeiro!</span>";
+        return;
+      }
+
+      const total = answers[subject].length;
+      if(score === total){
+        result.innerHTML = `<span class='text-success'>🎉 Parabéns! Você acertou ${score} de ${total}!</span>`;
+      }else{
+        result.innerHTML = `<span class='text-warning'>Você acertou ${score} de ${total}. Continue estudando! 💪</span>`;
+      }
+    }
+
+    function resetQuiz(subject){
+      const quiz = document.getElementById(`quiz-${subject}`);
+      quiz.querySelectorAll('input[type=radio]').forEach(r => r.checked = false);
+      document.getElementById(`result-${subject}`).innerHTML = "";
+    }
+  </script>
+</body>
+</html>

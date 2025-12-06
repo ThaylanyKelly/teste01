@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="icone/icone1.png" type="image/x-icon">
+  <title>Ciências</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header class="py-2 header-custom">
+    <div class="header-container d-flex align-items-center justify-content-between w-100">
+      
+      <h1 class="mx-3 text-center w-100">CIÊNCIAS</h1>
+    </div>
+  </header>
+
+  <!-- Menu -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand menu-item menu-home" href="./index.html">Página Inicial</a>
+    <a class="navbar-brand menu-item menu-portugues" href="./portugues.html">Português</a>
+    <a class="navbar-brand menu-item menu-matematica" href="./matematica.html">Matemática</a>
+    <a class="navbar-brand menu-item menu-ciencias" href="./ciencias.html">Ciências</a>
+    <a class="navbar-brand menu-item menu-historia" href="./historia.html">História</a>
+    <a class="navbar-brand menu-item menu-geografia" href="./geografia.html">Geografia</a>
+    <a class="navbar-brand menu-item menu-ingles" href="./ingles.html">Inglês</a>
+    <a class="navbar-brand menu-item menu-danca" href="./danca.html">Dança</a>
+  </nav>
+
+  <div class="container my-4">
+
+    <!-- 1. Misturas -->
+    <div id="misturas" class="subject mb-5">
+      <h3 class="text-primary">🌞 1. Misturas </h3>
+      <p><strong>Resumo:</strong> Mistura é a união física de duas ou mais substâncias em que cada componente mantém suas propriedades químicas. Não há formação de nova substância (isso ocorre apenas em reações químicas). As misturas podem ser classificadas principalmente em:</p>
+      <p>
+        <ul>
+          <li><strong>Homogêneas (soluções):</strong> aparência uniforme; não é possível distinguir as fases a olho nu. <strong>Exemplos:</strong> água com sal, ar, água com açúcar.</li>
+          <li><strong>Heterogêneas:</strong> apresentam duas ou mais fases distintas, podendo-se visualizar ou separar os componentes. <strong>Exemplos:</strong> água e óleo, areia na água, granola.</li>
+        </ul>
+      </p>
+      <p>
+        <strong>Formas / tipos especiais</strong>
+        <ul>
+          <li><strong>Colóides:</strong> partículas intermediárias entre solução e suspensão <strong>(ex.: leite, neblina).</strong></li>
+          <li><strong>Suspensões:</strong> partículas maiores que se depositam com o tempo <strong>(ex.: água turva com barro).</strong></li>
+        </ul>
+      </p>
+      <p>
+        <strong>Métodos de separação</strong>— usados para recuperar componentes sem transformar quimicamente:
+        <ul>
+          <li><strong>Decantação:</strong> separar líquidos imiscíveis (óleo/água) ou sólido que sedimenta do líquido.</li>
+          <li><strong>Filtração:</strong> separar sólido não dissolvido de líquido <strong>(ex.: areia e água).</strong></li>
+          <li><strong>Destilação:</strong> separar líquidos miscíveis com pontos de ebulição diferentes <strong>(ex.: álcool e água).</strong></li>
+          <li><strong>Evaporação / cristalização:</strong> recuperar soluto sólido dissolvido <strong>(ex.: obter sal da água do mar por evaporação).</strong></li>
+          <li><strong>Centrifugação:</strong> acelerar a sedimentação com força centrífuga.</li>
+          <li><strong>Cromatografia:</strong> separar componentes dissolvidos por afinidade com uma fase móvel e fixa (usada em laboratórios).</li>
+        </ul>
+      </p>
+      <p>
+        <strong>Aplicações e importância:</strong>
+        Misturas estão em todo lugar (alimentos, medicamentos, ar). Conhecer como separá-las é crucial em indústria, laboratórios, tratamento de água e na vida cotidiana. 
+      </p>
+
+      <form id="quiz-misturas">
+        <div class="question">
+          <p>1️⃣ Qual das opções abaixo é um exemplo de mistura homogênea?</p>
+          <input type="radio" name="q1" value="a"> Água e óleo <br>
+          <input type="radio" name="q1" value="b"> Areia na água <br>
+          <input type="radio" name="q1" value="c"> Água com sal <br>
+          <input type="radio" name="q1" value="d"> Água com barro
+        </div>
+
+        <div class="question">
+          <p>2️⃣ Qual método é mais adequado para separar um sólido fino misturado a um líquido, quando o sólido se deposita com o tempo?</p>
+          <input type="radio" name="q2" value="a"> Decantação <br>
+          <input type="radio" name="q2" value="b"> Destilação <br>
+          <input type="radio" name="q2" value="c"> Filtração <br>
+          <input type="radio" name="q2" value="d"> Cromatografia
+        </div>
+        <div class="question">
+          <p>3️⃣ Em qual técnica se aproveita a diferença de pontos de ebulição para separar componentes de uma mistura líquida? </p>
+          <input type="radio" name="q3" value="a"> Filtração <br>
+          <input type="radio" name="q3" value="b"> Destilação <br>
+          <input type="radio" name="q3" value="c"> Centrifugação<br>
+          <input type="radio" name="q3" value="d"> Evaporação
+        </div>
+
+        <button type="button" class="btn btn-custom" onclick="checkAnswers('misturas')">Ver Resultado</button>
+        <button type="button" class="btn btn-secondary" onclick="resetQuiz('misturas')">Tentar Novamente</button>
+        <p id="result-misturas"></p>
+      </form>
+    </div>
+
+    <!-- 2. Transformações reversíveis e não reversíveis -->
+    <div id="transformacoes" class="subject mb-5">
+      <h3 class="text-success">🧭 2. Transformações reversíveis e não reversíveis</h3>
+      <p><strong>Resumo:</strong> Transformações são mudanças que uma substância ou sistema sofre. Em Ciências, distinguimos: 
+      <ul>
+        <li><strong>Transformações reversíveis (físicas reversíveis):</strong> a mudança pode ser revertida pelo mesmo processo ou por outro processo físico sem alteração química. Exemplos clássicos: fusão e solidificação da água — gelo (sólido) → derrete → água (líquida) e, ao congelar, volta a ser gelo. Evaporação e condensação também são reversíveis.</li>
+        <li><strong>Transformações não reversíveis (irreversíveis):</strong> há alteração que não volta ao estado inicial pelas mesmas condições físicas; muitas vezes envolve reações químicas (formação de novas substâncias) ou perda de propriedades originais. Exemplos: queimar papel (papel vira cinzas e gases), ferrugem do ferro (oxidação formando óxido), cozimento de um ovo (proteínas desnaturadas formando nova estrutura).</li>
+      </ul>
+      </p>
+      <p>
+        <strong>Como identificar</strong>
+        <ul>
+          <li>Se a composição química muda e surgem novas substâncias → provavelmente irreversível (reação química).</li>
+          <li>Se só muda a aparência ou o estado físico, sem mudança nas substâncias → geralmente reversível (mudança física).</li>
+        </ul>
+      </p>
+      <p>
+        <strong>Exemplos práticos</strong>
+        <ul>
+          <li><strong>Reversível:</strong> gelo derretendo, aço aquecido e depois resfriado (se sem alteração química), vapor de água condensando.</li>
+          <li><strong>Irreversível:</strong> queima, digestão, cozimento, mistura com reação (neutralização ácido-base com liberação de calor e novos sais).</li>
+        </ul>
+      </p>
+
+
+      <form id="quiz-transformacoes">
+        <div class="question">
+          <p>1️⃣ Qual das seguintes mudanças é considerada irreversível por transformação química? </p>
+          <input type="radio" name="q1" value="a"> Sublimação do gelo seco (CO₂ sólido → gasoso)<br>
+          <input type="radio" name="q1" value="b"> Queima de madeira <br>
+          <input type="radio" name="q1" value="c"> Dissolução de sal em água (sal dissolvido) <br>
+          <input type="radio" name="q1" value="d"> Condensação do vapor em água
+        </div>
+
+        <div class="question">
+          <p>2️⃣ O derretimento da cera e posterior solidificação quando esfria é um exemplo de transformação: </p>
+          <input type="radio" name="q2" value="a"> Física e reversível <br>
+          <input type="radio" name="q2" value="b"> Química e irreversível <br>
+          <input type="radio" name="q2" value="c"> Química e reversível <br>
+          <input type="radio" name="q2" value="d"> Física e irreversível
+        </div>
+
+        <div class="question">
+          <p>3️⃣ Ao cozinhar um ovo, observa-se alteração no aspecto e textura que não volta ao estado original ao esfriar. Esse processo é classificado como: </p>
+          <input type="radio" name="q3" value="a"> Transformação física reversível <br>
+          <input type="radio" name="q3" value="b"> Transformação física irreversível <br>
+          <input type="radio" name="q3" value="c"> Transformação química irreversível <br>
+          <input type="radio" name="q3" value="d"> Mistura homogênea
+        </div>
+
+        <button type="button" class="btn btn-custom" onclick="checkAnswers('transformacoes')">Ver Resultado</button>
+        <button type="button" class="btn btn-secondary" onclick="resetQuiz('transformacoes')">Tentar Novamente</button>
+        <p id="result-transformacoes"></p>
+      </form>
+    </div>
+
+    <!-- 3. Água: características, estados físicos e distribuição no planeta -->
+    <div id="agua" class="subject mb-5">
+      <h3 class="text-warning">🌙 3. Água: características, estados físicos e distribuição no planeta</h3>
+      <p><strong>Resumo:</strong></p>
+      <p>
+        <strong>Características principais da água</strong>
+        <ul>
+          <li><strong>Molécula polar:</strong> a molécula H₂O tem distribuição desigual de cargas (oxigênio parcialmente negativo, hidrogênios parcialmente positivos). Essa polaridade confere propriedades importantes.</li>
+          <li><strong>Solvente universal:</strong> dissolvem-se muitas substâncias iônicas e polares na água, tornando-a essencial para processos biológicos e químicos.</li>
+          <li><strong>Elevado calor específico:</strong> a água aquece e esfria mais lentamente que muitos líquidos — ajuda a regular temperaturas em ambientes e organismos.</li>
+          <li><strong>Coesão e adesão:</strong> coesão (atração entre moléculas de água) explica tensão superficial; adesão (atração entre água e outras superfícies) ajuda na capilaridade.</li>
+          <li><strong>Anomalia da densidade:</strong> a água sólida (gelo) é menos densa que a líquida — por isso o gelo flutua. Isso é vital para ecossistemas aquáticos no inverno.</li>
+          <li><strong>Transparência:</strong> permite penetração de luz em corpos d’água, importante para fotossíntese aquática.</li>
+        </ul>
+      </p>
+      <p>
+        <strong>Estados físicos e mudanças de fase</strong>
+        <ul>
+          <li><strong>Sólido (gelo):</strong> moléculas organizadas em rede; menos denso que o líquido. </li>
+          <li><strong>Líquido (água):</strong> moléculas próximas, movimento moderado. </li>
+          <li><strong>Gasoso (vapor):</strong> moléculas afastadas, movimento livre. </li>
+        </ul>
+      </p>
+      <p>
+        <strong>Mudanças de fase com nomes:</strong>
+        <ul>
+          <li><strong>Fusão:</strong> sólido → líquido. </li>
+          <li><strong>Solidificação/solidificação:</strong> líquido → sólido. </li>
+          <li><strong>Vaporização (ebulição/evaporação):</strong> líquido → gasoso. </li>
+          <li><strong>Condensação:</strong> gasoso → líquido. </li>
+          <li><strong>Sublimação:</strong> sólido → gasoso direto (ex.: gelo seco — não para água, mas neve em certas condições). </li>
+          <li><strong>Depositação:</strong> gasoso → sólido direto (geada). </li>
+        </ul>
+      </p>
+      <p>
+      <p>
+        <strong>Distribuição da água no planeta</strong>
+        <ul>
+          <li> Cerca de 97% da água da Terra está nos oceanos (água salgada). </li>
+          <li> Aproximadamente 3% é água doce; grande parte dessa água doce está presa em geleiras e calotas polares e permafrost. Apenas uma fração pequena (menos de 1% da água total) está disponível como água doce de superfície (rios, lagos) ou subterrânea acessível. </li>
+          <li> A água também está na atmosfera em forma de vapor, nas nuvens e em pequenas quantidades no solo e na biosfera (organismos). </li>
+          <li><strong>Ciclo da água (hidrológico):</strong> evaporação → condensação → precipitação → escoamento/infiltração → retorno aos oceanos. Esse ciclo distribui água pelo planeta e sustenta ecossistemas. </li>
+        </ul>
+      </p>
+      <p>
+      <p>
+        <strong>Importância:</strong>
+        <ul>
+          Água é essencial para vida, agricultura, indústria e clima. Sua distribuição desigual e o fato de que a maior parte é salgada tornam o gerenciamento da água doce um desafio global.
+        </ul>
+      </p>
+
+
+      <form id="quiz-agua">
+        <div class="question">
+          <p>1️⃣ Qual propriedade da água explica por que o gelo flutua sobre a água líquida? </p>
+          <input type="radio" name="q1" value="a"> Anomalia da densidade (gelo menos denso) <br>
+          <input type="radio" name="q1" value="b"> Alto ponto de ebulição <br>
+          <input type="radio" name="q1" value="c"> Polaridade molecular <br>
+          <input type="radio" name="q1" value="d"> Transparência
+        </div>
+
+        <div class="question">
+          <p>2️⃣ Aproximadamente qual porcentagem da água da Terra é água doce disponível (superfície e aquíferos acessíveis)? </p>
+          <input type="radio" name="q2" value="a"> 50% <br>
+          <input type="radio" name="q2" value="b"> 25% <br>
+          <input type="radio" name="q2" value="c"> 3% <br>
+          <input type="radio" name="q2" value="d"> Menos de 1%
+        </div>
+
+        <div class="question">
+          <p>3️⃣ Qual processo do ciclo da água transforma vapor d’água em gotículas que formam nuvens? </p>
+          <input type="radio" name="q3" value="a"> Evaporação <br>
+          <input type="radio" name="q3" value="b"> Infiltração <br>
+          <input type="radio" name="q3" value="c"> Condensação <br>
+          <input type="radio" name="q3" value="d"> Precipitação
+        </div>
+
+        <button type="button" class="btn btn-custom" onclick="checkAnswers('agua')">Ver Resultado</button>
+        <button type="button" class="btn btn-secondary" onclick="resetQuiz('agua')">Tentar Novamente</button>
+        <p id="result-agua"></p>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function checkAnswers(subject) {
+      const quiz = document.getElementById(`quiz-${subject}`);
+      const result = document.getElementById(`result-${subject}`);
+      const answers = {
+        'misturas': ['c', 'a', 'b'],
+        'transformacoes': ['b', 'a', 'c'],
+        'agua': ['a', 'd', 'c'],
+      };
+
+      const selected = [...quiz.querySelectorAll('input[type=radio]:checked')].map(r => r.value);
+      let score = 0;
+      selected.forEach((v, i) => { if (v === answers[subject][i]) score++; });
+
+      if (selected.length === 0) {
+        result.innerHTML = "<span class='text-danger'>Responda as perguntas primeiro!</span>";
+        return;
+      }
+
+      const total = answers[subject].length;
+      if (score === total) {
+        result.innerHTML = `<span class='text-success'>🎉 Parabéns! Você acertou ${score} de ${total}!</span>`;
+      } else {
+        result.innerHTML = `<span class='text-warning'>Você acertou ${score} de ${total}. Continue estudando! 💪</span>`;
+      }
+    }
+
+    function resetQuiz(subject) {
+      const quiz = document.getElementById(`quiz-${subject}`);
+      quiz.querySelectorAll('input[type=radio]').forEach(r => r.checked = false);
+      document.getElementById(`result-${subject}`).innerHTML = "";
+    }
+  </script>
+</body>
+</html>
